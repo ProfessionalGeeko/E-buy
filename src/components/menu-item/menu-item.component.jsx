@@ -7,7 +7,6 @@ import withRouter from "../../utils/withRouter";
 
 
 const MenuItem = ({title, imageUrl, size, linkUrl, router}) => {
-    console.log(router);
     return <div className={`${size?size+' menu-item':'menu-item'}`} onClick={() => router.navigate(`${router.location.pathname}${linkUrl}`)}>
         <div className='background-image' style={{
             backgroundImage: `url(${imageUrl})`
